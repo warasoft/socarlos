@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>::SoCarlos Refrigeración::</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<header class="menu">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  			<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  				<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+	    		<ul class="nav navbar-nav ml-auto">
+	      			<li class="nav-item active">
+	        			<a class="nav-link" href="#">Home
+	        			</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#somos">Quienes somos?</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#servicios">Servicios</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#galeria">Galeria</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#contacto">Contacto</a>
+	      			</li>
+	    		</ul>
+  			</div>
+		</nav>
+	</header>
+
+	<!--home----------------------------->
+	<section class="home" id="home">
+
+	</section>
+
+	<!--somos---------------------------->
+	<section class="somos" id="somos">
+		<div class="container">
+			<div class="text-center"><h2>¿Quienes somos?</h2></div>
+		</div>
+	</section>
+
+	<!--variedades----------------------->
+	<section class="variedades" id="variedades">
+		<div class="container">
+			<div class="text-center"><h2>VARIEDADES</h2></div>
+			<br>
+            <div class="row">
+                <div class="col-md-6">
+                	<p>Nuestra variedade creada
+                	por la basta experiencia en el deleite de las mejores cervecerias del mundo, estan en un solo lugar.</p>
+                	<p>
+                	La amplia gama de cervezas se podrían encasillar dentro de la denominación "west coast", es decir, cervezas con alto contenido en lúpulo.</p>
+                </div>    
+                <div class="col-md-6 text-center">
+                    <img class="rounded-circle">
+                </div>            
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+        	<div class="row promo">
+        		<div class="col-md-4 promo-item item-1">
+        			<a href="#" data-toggle="modal" data-target="#ipa"><h3>IPA ARGENTA</h3></a>
+        		</div>
+        		<div class="col-md-4 promo-item item-2">
+        			<a href="#" data-toggle="modal" data-target="#stout"><h3>CREAM STOUT</h3></a>
+        		</div>
+        		<div class="col-md-4 promo-item item-3">
+        			<a href="#" data-toggle="modal" data-target="#ceropos"><h3>Ö +</h3></a>
+        		</div>
+        	</div>
+        </div>
+	</section>
+
+	<!--Contacto----------------------->
+	<section class="contacto" id="contacto">
+		<div class="container">
+			<div class="text-center"><h2>CONTACTO</h2></div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Envianos tu consulta para que un asesor se contacte con vos.</h2>
+					<br>
+					<div class="container">
+						<form>
+						  	<input class="form-control" type="text" name="name"  id="name" required="required" placeholder="NOMBRE">
+						  	<br>
+						    <input class="form-control" type="email" name="email" id="email" required="required" placeholder="E-M@IL">
+						  	<br>
+	                    	<input class="form-control" type="text" name="telefono" id="telefono" required="required" placeholder="TELÉFONO"><br>
+	                    	<textarea class="form-control" id="consulta" name="consulta" placeholder="CONSULTA" rows="3"></textarea>
+						</form>
+					</div>
+				</div>
+		        <Br>
+				<div class="col-md-6">
+					<br>
+					<h2>Realiza tu pedido ya!!!</h2>
+					<br>
+					<div class="container">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <label class="input-group-text" for="inputGroupSelect02">Variedad</label>
+					  </div>
+					  <select class="custom-select" id="tipo">
+					    <option selected>Seleccioná...</option>
+					    <option value="Ipa argenta">IPA ARGENTA</option>
+					    <option value="Lager">LAGER</option>
+					    <option value="0+">0 +</option>
+					  </select>
+					</div>
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="cant">Cantidad</span>
+					  </div>
+					  <input type="number" class="form-control" name="canti"  id="canti" placeholder="Ej. 10...">
+					</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row text-center">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-dark">ENVIAR</button>
+				 <br><br>
+		         <div class="text-center">
+		                	<a class="social-contact" target="_blank" itemprop="sameAs" onClick="copiarDatos()">
+								<img src="img/wasapcontact.png" alt="wasapcontact.png">
+							</a>
+		         </div>
+				</div>
+				<textarea id="textToEncode" style="visibility: hidden;"></textarea>
+			</div>
+        </div>
+	</section>
+
+	<!--footer------------------------->
+	<footer class="footer" id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+	            </div>
+	            <div class="col-md-4 text-center">
+					<p>
+						<a href="tel:1165372209" target="_blank" style="color: white;">
+							<span class="fa fa-fw fa-mobile"></span>(011) 6537-2209
+						</a>
+					</p>
+					<br>
+					<p>
+						<a href="mailto:socarlos.al@gmail.com" target="_blank" style="color: white;">
+							<span class="fa fa-fw fa-envelope"></span>socarlos.al@gmail.com
+						</a>
+					</p>
+					<br>
+			    <p>
+						<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Folskum&layout=button&size=large&mobile_iframe=true&width=99&height=28&appId" width="99" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</p>
+					<br>
+	            </div>
+	            <div class="col-md-4">
+	            </div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 social-icons">
+					<ul >
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=5493782436096&amp;text=hola,%20qu%C3%A9%20tal?" class="social-icons" target="_blank" itemprop="sameAs"><img src="img/whatsapp.svg" alt="whatsapp.svg"></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/socarlos" class="social-icons" target="_blank" itemprop="sameAs"><img src="img/facebook.svg" alt="facebook.svg"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/socarlos" class="social-icons" target="_blank" itemprop="sameAs"><img src="img/instagram.svg" alt="instagram.svg"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/socarlos" class="social-icons" target="_blank" itemprop="sameAs"><img src="img/twitter.svg" alt="twitter.svg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2019 SoCarlos. Todos los derechos reservados. Developed by 
+				<a href="http://warasoftsalta.com/" target="_blank">WaraSoftSalta</a>
+				</p>
+			</div>		
+		</div>
+	</footer>
+
+	<!--modal-------------------------->
+	<div class="modal fade" id="ipa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  		<div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">IPA ARGENTA</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        IPA ARGENTA es una cerveza de estilo positivo, inspirada en el pasar de los que saben de cervezas.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		</div>
+	</div>
+	<div class="modal fade" id="stout" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  		<div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">CREAM STOUT</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        CREAM STOUT es una cerveza de estilo positivo, inspirada en el pasar de los que saben de cervezas.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ceropos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  		<div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">0+</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        0+ es una cerveza de estilo positivo, inspirada en el pasar de los que saben de cervezas.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		</div>
+	</div>
+	<!--scripts-------------------->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script type="text/javascript" src="js/enviawasap.js"></script>
+    <script>
+		$(document).ready(function(){
+		  $(".navbar a").on('click', function(event)
+		  {if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		     window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+	</script>
+	<script type="text/javascript">
+		$('.navbar-nav>li>a').on('click', function(){$('.navbar-collapse').collapse('hide')});
+	</script>
+</body>
+</html>
