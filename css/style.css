@@ -15,7 +15,7 @@
   background-color: transparent;
   position: relative;
   display: table;
-  background: url(../img/serv1.jpg) fixed no-repeat 50% 50%;
+  background: url(../img/1.jpg) fixed no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -63,23 +63,22 @@
 
 /*--QUIENES SOMOS---------------------------------------------------*/
 .somos {
-  padding-top: 100px;
-  padding-bottom: 100px;
+
 }
 
 /*--SERVICIOS-----------------------------------------------------------*/
 .servicios {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: url(../img/serv1.jpg) fixed no-repeat 50% 50%;
-  background-size: cover;
+  background-color: #62C6EF;
 }
 
 /*--CONTACT-----------------------------------------------------------*/
 .contacto {
-  background: url(../img/4.jpg) fixed no-repeat 50% 50%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(../img/contacto.jpg) fixed no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .social-contact img {
