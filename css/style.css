@@ -36,7 +36,7 @@
     display: table;*/
 
 
-  background: url("../img/1.jpg") fixed no-repeat 50% 50%;
+  background: url("../img/1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
