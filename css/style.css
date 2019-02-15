@@ -40,7 +40,8 @@
   background-color: transparent;
   position: relative;
   display: table;
-  background: url(../img/1.jpg) ;
+  background: url(../img/1.jpg) fixed no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .home video {
