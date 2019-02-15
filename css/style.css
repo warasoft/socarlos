@@ -1,6 +1,11 @@
 /*--MENU------------------------------------------------------------*/
 .menu {
-	
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 30;
+  background: #FFF;
 }
 
 .menu.navbar_fixed {
@@ -21,6 +26,7 @@
   -webkit-transition: transform 500ms ease, background 500ms ease;
   z-index: 999999;
 }
+
 .menu img {
   width: 200px;
 }
@@ -30,12 +36,11 @@
 .home {
   width: 100%;
   height: 100%;
-  min-height: 786px;
+  min-height: 768px;
   background-color: transparent;
   position: relative;
   display: table;
-  background: url(../img/1.jpg) fixed no-repeat 50% 50%;
-  background-size: cover;
+  background: url(../img/1.jpg) ;
 }
 
 .home video {
@@ -67,7 +72,7 @@
 	background-color: rgba(0, 0, 0, 0.75);
 	height: 100%;
 	left: 0;
-	opacity: 0.45;
+	opacity: 0.30;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -77,12 +82,16 @@
 @media screen and (max-width: 1280px) {
 	.home video {
 		display: none;
+      min-height: 620px;
 	}
 }
 
 /*--QUIENES SOMOS---------------------------------------------------*/
 .somos {
-
+  background: black;
+}
+.carousel, .carousel-inner > .carousel-item > img {
+  height: 300px;
 }
 
 /*--SERVICIOS-----------------------------------------------------------*/
