@@ -102,6 +102,13 @@
   background-color: #62C6EF;
 }
 
+@media screen and (max-width: 460px) {
+	.img {
+		margin-left: 30px;
+	}
+}
+
+
 /*--CONTACT-----------------------------------------------------------*/
 .contacto {
   padding-top: 50px;
@@ -122,8 +129,8 @@
 
 /*--FOOTER--------------------------------------------------------*/
 .footer {
-  background-color: #222222;
-  color: #fff;
+  background-color: #fff;
+  color: #222222;
   padding-top: 50px;
   padding-bottom: 10px;
 }
